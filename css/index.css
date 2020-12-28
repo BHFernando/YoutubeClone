@@ -1,0 +1,89 @@
+body {
+  background-color: rgb(20, 20, 20);
+  color: white;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/*Responsividad para computadoras*/
+@media screen and (min-width: 1200px) {
+  #videosRecientes {
+    float: left;
+    margin: 60px 5% 0 5%;
+    height: 700px;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  #videosRecientes a {
+    height: 45%;
+    width: 25%;
+  }
+  #videosRecientes a .video .miniatura {
+    width: 100%;
+    height: 70%;
+  }
+
+  /*Responsividad para tablets*/
+}
+@media screen and (max-width: 1200px) and (min-width: 600px) {
+  #videosRecientes {
+    float: left;
+    margin: 60px 5% 0 5%;
+    height: 700px;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  #videosRecientes a {
+    height: 350px;
+    width: 25%;
+  }
+  #videosRecientes a .video .miniatura {
+    width: 100%;
+    height: 50%;
+  }
+  #videosRecientes a .video h2 {
+    margin-bottom: 30px;
+  }
+}
+
+/*Responsividad para moviles*/
+@media screen and (max-width: 600px) {
+  #videosRecientes {
+    float: left;
+    margin: 60px 5% 0 5%;
+    height: 700px;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  #videosRecientes a {
+    height: 340px;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  #videosRecientes a .video .miniatura {
+    width: 100%;
+    height: 70%;
+  }
+}
+#videosRecientes a .video {
+  height: 100%;
+  width: 100%;
+}
+
+#videosRecientes a .video h2 {
+  margin-top: 0%;
+  height: 45px;
+  font-size: 20px;
+}

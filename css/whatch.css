@@ -1,0 +1,189 @@
+body {
+  background-color: rgb(20, 20, 20);
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  padding-top: 60px;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+
+/*Informacion del video*/
+.infoVideo {
+  height: auto;
+  width: 55%;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 2px;
+  flex-direction: column;
+  text-decoration: none;
+}
+.infoVideo #contRep {
+  width: 100%;
+  height: 500px;
+}
+.infoVideo #reproductor {
+  order: 1;
+}
+.infoVideo #datosVideo {
+  color: white;
+  order: 2;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 2rem 0px 0px;
+}
+.infoVideo #datosVideo a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+}
+#infoCanal {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-items: flex-start;
+}
+#logoCanal {
+  border-radius: 100%;
+  height: 75px;
+  width: 75px;
+}
+#infoCanal div {
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-top: auto;
+  margin-bottom: auto;
+  justify-content: left;
+  align-items: center;
+}
+#infoCanal div h4,
+#infoCanal div h5 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+#infoCanal div h4 {
+  font-size: 2rem;
+}
+#infoCanal div h5 {
+  font-size: 1rem;
+}
+#infoCanal #suscribirse {
+  margin-left: auto;
+  margin-right: 2rem;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-size: 2rem;
+  width: auto;
+  color: blue;
+  background-color: rgb(20, 20, 20);
+  border: 1px solid rgb(0, 0, 250);
+  cursor: pointer;
+}
+/*Sugerencias*/
+#sugerencias {
+  height: 1000px;
+  width: 35%;
+  color: white;
+}
+#sugerencias .video {
+  width: 95%;
+  display: flex;
+  margin-bottom: 1rem;
+  flex-direction: row;
+  margin-left: 5%;
+  height: 180px;
+}
+
+#sugerencias .video img {
+  width: 50%;
+  height: 100%;
+}
+#sugerencias .video div {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+#sugerencias .video div p {
+  font-size: 1rem;
+  max-height: 56px;
+}
+#sugerencias .video div p h2 {
+  max-height: 56px !important;
+}
+#descripcionVideo {
+  width: 100%;
+  height: auto;
+}
+.activo {
+  color: blue !important;
+}
+
+/*Responsividad para cmoviles y tabletas*/
+@media screen and (max-width: 1200px) {
+  #sugerencias .video img {
+    width: 50%;
+    height: 100%;
+  }
+  body {
+    flex-direction: column;
+  }
+  .infoVideo {
+    width: 100%;
+  }
+  #sugerencias {
+    width: 100%;
+  }
+  #sugerencias .video div {
+    max-width: 48% !important;
+    max-height: 20% !important;
+    margin-left: 2%;
+  }
+  .titleVideo {
+    font-size: 0.9rem !important;
+  }
+  #sugerencias .video div p {
+    font-size: 0.8rem;
+    max-height: 56px;
+  }
+  #tituloVideo {
+    font-size: 1rem;
+  }
+  #datosVideo,
+  .infoVideo #datosVideo a {
+    font-size: 0.7rem;
+  }
+  #infoCanal div h4 {
+    font-size: 1rem;
+  }
+  #descripcionVideo {
+    margin-top: 5px;
+  }
+  #descarga {
+    margin-right: 10px;
+  }
+  .infoVideo #contRep {
+    height: 200px !important;
+  }
+  #infoCanal #suscribirse {
+    font-size: 1rem;
+  }
+  #suscriptoresCanal {
+    display: none;
+    visibility: hidden;
+  }
+  #infoCanal #suscribirse {
+    color: blue;
+    border: 1px solid rgba(0, 0, 0, 0);
+  }
+  #descripcionVideo {
+    width: 100%;
+    height: 100px;
+    overflow: auto;
+  }
+}
